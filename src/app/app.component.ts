@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dynamic-button-event-binding';
+
+  isDisabled: boolean = true
+
+  toggle() {
+    this.isDisabled = !this.isDisabled
+    this.isDisabled ? "Currently Disabled" : "Currently Enabled"
+  }
 }
